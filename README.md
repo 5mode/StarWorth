@@ -2,7 +2,7 @@
 
 Hello and welcome to StarWorth!   
 	   
-StarWorth is a light and simple software on premise to log calendar and events.  
+StarWorth is a light and simple software on premise to log projects and events.  
 	   
 StarWorth is released under GPLv3 license, it is supplied AS-IS and we do not take any responsibility for its misusage.   
 	   
