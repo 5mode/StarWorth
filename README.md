@@ -20,4 +20,4 @@ As you are going to run StarWorth in the PHP process context, using a limited we
        <li>Configure the max history and MAX_AGE items as required (default: 1000 and 3600).</li>	      
      </ul>
      	   
-Hope you can enjoy it and let us know about any feedback: posta@elettronica.lol
+For feedback: posta@elettronica.lol
