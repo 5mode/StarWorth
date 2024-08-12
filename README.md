@@ -19,5 +19,10 @@ As you are going to run StarWorth in the PHP process context, using a limited we
        <li>Configure the DISPLAY attributes as required.</li>
        <li>Configure the max history and MAX_AGE items as required (default: 1000 and 3600).</li>	      
      </ul>
-     	   
-For feedback: posta@elettronica.lol
+
+## Screenshot:
+
+![StarWorth in action #1](/SW_res/screenshot1.png)<br><br><br>
+
+Feedback: <a href="mailto:posta@elettronica.lol">posta@elettronica.lol</a>
+
