@@ -1,2 +1,26 @@
 # StarWorth
-A team can have multiple projects in multitasking, and timetotime the client or the manager popping up with an "hammer". Otherwise a simple fact sharing tool.
+	   Hello and welcome to StarWorth!<br><br>
+	   
+	   StarWorth is a light and simple software on premise to log calendar and events.<br><br>
+	   
+	   StarWorth is released under GPLv3 license, it is supplied AS-IS and we do not take any responsibility for its misusage.<br><br>
+	   
+     StarWorth name comes from a prank on "Star War" meaning our intention to make stars/projects "worth".<br><br>
+     
+	   First step, use the left side panel password and salt fields to create the hash to insert in the config file. Remember to manually set there also the salt value.<br><br>
+	   
+	   As you are going to run StarWorth in the PHP process context, using a limited web server or phpfpm user, you must follow some simple directives for an optimal first setup:<br>
+	   <ol>
+	   <li>Check the permissions of your "data" folder in your web app private path; and set its path in the config file.</li>
+	   <li>In the data path create a ".SW_history" and ".SW_captchahistory" files and give them the write permission.</li>
+     <li>Finish to setup the configuration file apporpriately, in the specific:</li>
+     <ul>
+       <li>Configure the APP_USE appropriately.</li>
+       <li>Configure the DISPLAY attributes as required.</li>
+       <li>Configure the max history and MAX_AGE items as required (default: 1000 and 3600).</li>	      
+	   </ul>
+     </ol>
+	   
+	   <br>	
+     
+	   Hope you can enjoy it and let us know about any feedback: <a href="mailto:posta@elettronica.lol" style="color:#e6d236;">posta@elettronica.lol</a>
