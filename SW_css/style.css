@@ -32,7 +32,7 @@ body {
   padding: 0px;
   background:url('/SW_res/sw_bg1.jpg') fixed; 
   background-size: cover; 
-  background-position: left; 
+  background-position: left top; 
   background-repeat: no-repeat;
   color: #1c1c1c; 
   font-family:'Press Start 2P';
@@ -42,7 +42,7 @@ h1 {
   clear: both;
   margin:auto;
   width: 60%;
-  min-width: 800px;
+  /*min-width: 800px;*/
   text-align:center;
   font-size: 26px;
 }
@@ -81,7 +81,6 @@ hr {
 }
 #content-bar {
   width:100%;
-  float:left;
 }
 .data-date { 
   font-size:10px; 
