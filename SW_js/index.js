@@ -149,16 +149,25 @@ $("#send").on("click",function() {
 
 function setContentPos() {
   if (window.innerWidth<650) {
+    //$(document.body).css("background","#a38873");
+    $(document.body).css("background","url('/SW_res/sw_bgm1.jpg') fixed");
+    $(document.body).css("background-size","100 100");
+    $(document.body).css("background-position","30% 0%");
     $("#ahome").attr("href","/");
     $("#agithub").css("display","none");
     $("#afeedback").css("display","none");
     $("#asupport").css("display","none");
     $("#pwd2").css("display","inline");    
     //$("#sidebar").css("display","none");
-    $("#burger-menu").css("display","inline");
-    //$("#contentbar").css("width","100%");
+    $("#burger-menu").css("display","none");
+    //$("#content-bar").css("width","100%");
     $("#logo-hl").css("display","none");
+    $(".td-data-date").hide();
+    $(".td-data-time").hide();
   } else {  
+    $(document.body).css("background","url('/SW_res/sw_bg1.jpg') fixed");
+    $(document.body).css("background-size","cover");
+    $(document.body).css("background-position","left top");
     $("#ahome").attr("href","http://starworth.5mode-foss.eu");
     $("#agithub").css("display","inline");
     $("#afeedback").css("display","inline");
@@ -166,15 +175,17 @@ function setContentPos() {
     $("#pwd2").css("display","none");
     //$("#sidebar").css("display","inline");
     $("#burger-menu").css("display","none");
-    //$("#contentbar").css("width","75%");
+    //$("#content-bar").css("width","75%");
     $("#logo-hl").css("display","inline");
+    $(".td-data-date").show();
+    $(".td-data-time").show();
   }
 
   //table-event  
   if (window.innerWidth<1250) {
     $(".table-event").css("margin-left","2%");
     $(".table-event").css("width","98%");
-    $(".table-event").css("min-width","700px");
+    $(".table-event").css("min-width","500px");
   } else {
     $(".table-event").css("margin-left","33%");
     $(".table-event").css("width","62%");
