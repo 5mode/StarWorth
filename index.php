@@ -115,9 +115,12 @@
        continue;
      }
      
-     $mytag = date("Hi", $mytag); //right($mytag??"0000", 4);
-     $mytag = left($mytag, 2).":".right($mytag, 2);
-     $yesStar = ($mytag==="00:00")?false:true;
+     //$mytag = date("Hi", $mytag); //right($mytag??"0000", 4);
+     //$mytag = left($mytag, 2).":".right($mytag, 2);
+     $myoritag = right($mytag??"0000", 4);
+     $mytag = date("Hi", $mytag);
+     $mytag = left($mytag, 2).":".right($mytag, 2);     
+     $yesStar = ($myoritag==="0000")?false:true;
      $myccounter = left($myccounter,6);
      
      $mydesc = enableLinks($mydesc);
