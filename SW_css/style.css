@@ -87,6 +87,8 @@ hr {
   font-weight:900;
 }
 .data-desc {
+  max-width:300px;
+  width:100%;
   font-size:10px;
   white-space: nowrap;
 } 
@@ -280,7 +282,8 @@ td {
   padding-top:2px
 }
 .td-data-star {
-  width:28%; 
+  width:10%; 
+  min-width:88px;
   text-align:right; 
   vertical-align:top; 
   padding-top:2px; 
@@ -300,6 +303,8 @@ td {
   position: relative;
   top: 4px;
   width:46%; 
+  max-width:250px;
+  min-width:250px;
   text-align:left; 
   vertical-align:top; 
   padding-top:0px; 
@@ -307,6 +312,9 @@ td {
   font-size:18px;
   color:#FFFFFF;
   background: darkred;
+  white-space: nowrap;
+  overflow: clip;  
+  text-overflow: clip;   
 }
 .td-data-time {
   width:10%; 
