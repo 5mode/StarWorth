@@ -123,8 +123,6 @@
      $yesStar = ($myoritag==="0000")?false:true;
      $myccounter = left($myccounter,6);
      
-     $mydesc = enableLinks($mydesc);
-     
      // If I'm in admin
      if ($contextType === PERSONAL_CONTEXT_TYPE) {
 
@@ -166,7 +164,9 @@
        
      // If I'm not in admin
      } else {   
-       
+     
+       $mydesc = enableLinks($mydesc);
+           
        if ($myflag !== "u") {
 
        $star= PHP_STR;
