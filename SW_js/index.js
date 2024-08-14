@@ -81,11 +81,13 @@ function hideBurgerMenu() {
 }
 
 function showSideBar() {
- if (!bSideBarVisible) {
-   $("#content-bar").css("width","100%");
-   $("#sidebar").show("slow");
- }  
- bSideBarVisible = true; 
+ if (window.innerWidth>650) {
+    if (!bSideBarVisible) {
+      $("#content-bar").css("width","100%");
+      $("#sidebar").show("slow");
+    }  
+    bSideBarVisible = true; 
+ }   
 }
 
 function closeSideBar() {
@@ -153,6 +155,7 @@ function setContentPos() {
     $(document.body).css("background","url('/SW_res/sw_bgm1.jpg') fixed");
     $(document.body).css("background-size","100 100");
     $(document.body).css("background-position","30% 0%");
+    $("#call-sidebar").hide();
     $("#ahome").attr("href","/");
     $("#agithub").css("display","none");
     $("#afeedback").css("display","none");
@@ -169,6 +172,7 @@ function setContentPos() {
     $(document.body).css("background-size","cover");
     $(document.body).css("background-position","left top");
     $("#ahome").attr("href","http://starworth.5mode-foss.eu");
+    $("#call-sidebar").show();
     $("#agithub").css("display","inline");
     $("#afeedback").css("display","inline");
     $("#asupport").css("display","inline");  
